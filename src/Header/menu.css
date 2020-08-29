@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.menu-item {
+    height: 40px;
+    width: 15vw;
+    background: #1D8966;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.menu-item.active {
+    background: #2CBC8C;
+}
+
+.menu-item-text {
+    margin: 10px 0;
+}
