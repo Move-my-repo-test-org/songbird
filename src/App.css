@@ -2,3 +2,8 @@
   margin-right: 5vw;
   margin-left: 5vw;
 }
+
+.variants-info-block {
+  display: flex;
+  justify-content: space-between;
+}

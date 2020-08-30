@@ -9,9 +9,7 @@
 
 .question-img {
     width: 20vw;
-    /* max-width: 240px; */
     height: 15vw;
-    /* max-height: 180px; */
     object-fit: cover;
     border-radius: 20px;
     margin-right: 3vw;

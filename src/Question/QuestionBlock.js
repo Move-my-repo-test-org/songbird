@@ -28,7 +28,7 @@ class Question extends React.Component {
         if (!questionObj){
             return <p>Loading ...</p>;
         }
-        if (!this.state.answer) {
+        if (!this.props.isDone) {
             return (
                 <div className="question">
                     <img className="question-img" src={defaultBird} alt="some bird image" />
