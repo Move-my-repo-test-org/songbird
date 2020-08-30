@@ -6,7 +6,7 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            menuItems: [1,2,3,4,5,6],
+            menuItems: ["Разминка","Воробьиные","Лесные птицы","Певчие птицы","Хищные прицы","Морские птицы"],
         }
     }
 

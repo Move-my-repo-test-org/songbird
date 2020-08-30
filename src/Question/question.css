@@ -1,0 +1,37 @@
+.question {
+    margin: 20px 0;
+    padding: 20px;
+    background: #303030;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.question-img {
+    width: 20vw;
+    /* max-width: 240px; */
+    height: 15vw;
+    /* max-height: 180px; */
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 3vw;
+}
+
+.question-bird-name {
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.question-audio-player {
+    width: 60vw;
+    height: 4vw;
+    background: #F1F3F4;
+    border-radius: 20px;
+}
+
+hr {
+    color: #F7F3E7;
+    background: #F7F3E7;
+    font-size: 1px;
+    margin-bottom: 3vw;
+}
