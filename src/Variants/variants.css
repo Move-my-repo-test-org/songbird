@@ -1,0 +1,44 @@
+.variant {
+    list-style-type: none;
+    width: 100%;
+    border: 1px solid #444444;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 2vw;
+}
+
+.variant::before {
+    content: '•';
+    font-size: 32px;
+    color: #444444;
+    margin-top: 3px;
+    margin-right: 2vw;
+}
+
+.variants {
+    width: 40vw;
+    background: #303030;
+    border: 1px solid #444444;
+    border-radius: 10px;
+    padding: 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.variant:hover {
+    background: #444444;
+    cursor: pointer;
+}
+
+.variant.unable:hover {
+    background: #303030;
+    cursor: default;
+}
+
+.variant.true::before {
+    color: green;
+}
+
+.variant.false::before {
+    color: red;
+}

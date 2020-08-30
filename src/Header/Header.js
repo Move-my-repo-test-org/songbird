@@ -15,7 +15,7 @@ class Header extends React.Component {
             <div className="header">
                 <div className="logo-score-container">
                     <h1>Song<span>bird</span></h1>
-                    <p>Score: {this.state.currentScore ? this.state.currentScore : 0}</p>
+                    <p>Score: {this.props.score}</p>
                 </div>
                 <div className="menu-container">
                     <Menu activeItem={this.props.currentQuestion} />

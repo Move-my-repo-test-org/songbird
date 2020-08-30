@@ -20,6 +20,7 @@ class Question extends React.Component {
         let randomNum = Math.ceil(Math.random()*5);
         let questionObj = birdsData[this.props.currentTopic][randomNum];
         console.log(questionObj);
+        this.props.onQuestionChoose(questionObj);
         this.setState({currentItem: randomNum, currentQuestionObj: questionObj});
     }
     render() {
