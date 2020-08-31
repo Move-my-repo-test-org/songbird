@@ -21,3 +21,16 @@
 .menu-item-text {
     margin: 10px 0;
 }
+
+@media only screen and (max-width: 800px) {
+    .menu {
+        font-size: 11px;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        font-size: 9px;
+    }
+}

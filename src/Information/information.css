@@ -39,3 +39,35 @@
 .info-name-audio hr {
     margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+    .information {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .info-audio-player {
+        width: 100%;
+    }
+    
+    .info-name-audio {
+        width: 100%;
+    }
+
+    .info-img {
+        width: 32vw;
+        height: 24vw;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .short-info {
+        flex-direction: column;
+    }
+
+    .info-img {
+        width: 80vw;
+        height: 60vw;
+    }
+}

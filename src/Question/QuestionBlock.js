@@ -30,7 +30,7 @@ class Question extends React.Component {
         if (!this.props.isDone) {
             return (
                 <div className="question">
-                    <img className="question-img" src={defaultBird} alt="some bird image" />
+                    <img className="question-img" src={defaultBird} alt="some bird" />
                     <div className="question-name-audio">
                         <p className="question-bird-name">{'*'.repeat(questionObj.name.length)}</p>
                         <hr />

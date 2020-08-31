@@ -29,7 +29,7 @@ class InfoBlock extends React.Component {
             )
         }
         return (
-            <div>
+            <div className="information">
                 <p>Послушайте плеер и выберите птицу из списка</p>
             </div>
 

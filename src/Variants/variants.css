@@ -51,3 +51,10 @@
 ul {
     margin: 0;
 }
+
+@media only screen and (max-width: 800px) {
+    .variants {
+        width: 100%;
+        height: auto;
+    }
+}

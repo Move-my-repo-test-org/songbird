@@ -33,3 +33,20 @@ hr {
     font-size: 1px;
     margin-bottom: 3vw;
 }
+
+@media only screen and (max-width: 500px) {
+    .question-audio-player {
+        height: 30px;
+        width: 80vw;
+    }
+
+    .question-img {
+        width: 60vw;
+        height: 45vw;
+        align-self: center;
+    }
+
+    .question {
+        flex-direction: column;
+    }
+}

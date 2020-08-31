@@ -1,5 +1,4 @@
 import React from 'react';
-import birdsData from '../birds';
 
 class Variant extends React.Component {
     constructor(props) {
