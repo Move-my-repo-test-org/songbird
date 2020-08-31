@@ -23,12 +23,16 @@ class VariantsBlock extends React.Component {
         this.props.putVariant(variant, score);
     }
 
+    onVariantClick = (variant) => {
+        this.props.clickVariant(variant);
+    }
+
     render() {
         return (
             <div>
 
                 <ul className="variants">
-                    {birdsData[this.props.currentTopic].map(el => <Variant birdName={el.name} correctVariant={this.props.correctBird} onVariantChoose={this.onVariantChoose} done={this.state.isDone} key={el.id} />)}
+                    {birdsData[this.props.currentTopic].map(el => <Variant birdName={el.name} bird={el} correctVariant={this.props.correctBird} onVariantChoose={this.onVariantChoose} onVariantClick={this.onVariantClick} done={this.state.isDone} key={el.id} />)}
                 </ul>
             </div>
         )

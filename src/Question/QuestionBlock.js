@@ -8,7 +8,6 @@ class Question extends React.Component {
         super(props);
         this.state = {
             currentItem: 0,
-            answer: true,
         }
     }
 

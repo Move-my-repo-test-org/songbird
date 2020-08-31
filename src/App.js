@@ -11,7 +11,7 @@ class App extends React.Component {
     this.state = {
       currentQuestion: 1,
       correctAnswer: '',
-      currentAnswer: '',
+      currentResult: '',
       score: 0,
     }
   }
@@ -23,11 +23,13 @@ class App extends React.Component {
   }
 
   getVariant = (variant, score) => {
-    let currentAnswer = this.state.correctAnswer.name === variant ? true : false;
+    let currentResult = this.state.correctAnswer.name === variant.name ? true : false;
     console.log(this.state.score);
-    this.setState({currentAnswer: currentAnswer, score: this.state.score + score});
-    console.log(currentAnswer);
-    console.log(this.state.currentAnswer);
+    this.setState({currentResult: currentResult, score: this.state.score + score, currentAnswer: variant});
+  }
+
+  onVariantClick = (variant) => {
+    this.setState({currentAnswer: variant})
   }
 
 
@@ -38,17 +40,16 @@ class App extends React.Component {
           <Header currentQuestion={this.state.currentQuestion} score={this.state.score} />
         </header>
         <div className="question-block">
-          <Question currentTopic={this.state.currentQuestion} onQuestionChoose={this.onQuestionChoose} isDone={this.state.currentAnswer} />
+          <Question currentTopic={this.state.currentQuestion} onQuestionChoose={this.onQuestionChoose} isDone={this.state.currentResult} />
         </div>
         <div className="variants-info-block">
           <div className="variants-block">
-            <VariantsBlock currentTopic={this.state.currentQuestion} correctBird={this.state.correctAnswer.name} putVariant={this.getVariant} />
+            <VariantsBlock currentTopic={this.state.currentQuestion} correctBird={this.state.correctAnswer.name} putVariant={this.getVariant} clickVariant={this.onVariantClick} />
           </div>
           <div className="information-block">
-            <InfoBlock correctAnswer={this.state.correctAnswer} isDone={this.state.currentAnswer} />
+            <InfoBlock currentAnswer={this.state.currentAnswer} isDone={this.state.currentResult} />
           </div>
         </div>
-        
         <audio src={`./${this.state.currentResult}.mp3`} autoPlay></audio>
       </div>
     )

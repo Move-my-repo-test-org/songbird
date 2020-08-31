@@ -10,8 +10,8 @@ class InfoBlock extends React.Component {
     }
 
     render() {
-        let bird = this.props.correctAnswer;
-        if (this.props.isDone) {
+        let bird = this.props.currentAnswer;
+        if (bird) {
             return (
                 <div className="information">
                     <div className="short-info">
