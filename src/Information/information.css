@@ -1,0 +1,73 @@
+.information {
+    width: 44vw;
+    height: 350px;
+    box-sizing: border-box;
+    background: #303030;
+    border: 2px solid #444444;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-img {
+    width: 16vw;
+    height: 12vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 3vw;
+}
+
+.short-info {
+    display: flex;
+}
+
+.info-audio-player {
+    width: 20vw;
+    height: 40px;
+    background: #F1F3F4;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.info-name-audio {
+    width: 20vw;
+}
+
+.info-name-audio p {
+    margin: 10px 0;
+}
+
+.info-name-audio hr {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .information {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .info-audio-player {
+        width: 100%;
+    }
+    
+    .info-name-audio {
+        width: 100%;
+    }
+
+    .info-img {
+        width: 32vw;
+        height: 24vw;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .short-info {
+        flex-direction: column;
+    }
+
+    .info-img {
+        width: 80vw;
+        height: 60vw;
+    }
+}

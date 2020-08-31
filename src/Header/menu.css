@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.menu-item {
+    height: 40px;
+    width: 15vw;
+    background: #1D8966;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.menu-item.active {
+    background: #2CBC8C;
+}
+
+.menu-item-text {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .menu {
+        font-size: 11px;
+        overflow-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menu {
+        font-size: 9px;
+    }
+}
